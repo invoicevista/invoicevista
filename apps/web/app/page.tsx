@@ -26,7 +26,9 @@ export default function Home() {
               Documentation
             </Link>
             <ThemeToggle />
-            <Button>Get Started</Button>
+            <Button asChild>
+              <Link href="https://app.invoicevista.com/sign-up">Get Started</Link>
+            </Button>
           </nav>
         </div>
       </header>
@@ -47,9 +49,11 @@ export default function Home() {
                 Integrate with your applications in minutes, not days.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-                <Button size="lg" className="group">
-                  Start Building
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <Button size="lg" className="group" asChild>
+                  <Link href="https://app.invoicevista.com/sign-up">
+                    Start Building
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </Button>
                 <Button size="lg" variant="outline">
                   View Documentation
@@ -260,8 +264,8 @@ pnpm add @invoicevista/sdk`}
                   <li>✓ Email delivery</li>
                   <li>✓ Community support</li>
                 </ul>
-                <Button className="w-full" variant="outline">
-                  Get Started
+                <Button className="w-full" variant="outline" asChild>
+                  <Link href="https://app.invoicevista.com/sign-up">Get Started</Link>
                 </Button>
               </div>
               <div className="relative rounded-lg border-2 border-primary p-6">
@@ -283,7 +287,9 @@ pnpm add @invoicevista/sdk`}
                   <li>✓ Webhooks & events</li>
                   <li>✓ Priority support</li>
                 </ul>
-                <Button className="w-full">Get Started</Button>
+                <Button className="w-full" asChild>
+                  <Link href="https://app.invoicevista.com/sign-up">Get Started</Link>
+                </Button>
               </div>
               <div className="relative rounded-lg border p-6">
                 <h3 className="mb-2 text-lg font-semibold">Enterprise</h3>
