@@ -1,135 +1,149 @@
-# Turborepo starter
+# InvoiceVista
 
-This Turborepo starter is maintained by the Turborepo core team.
+A developer-first platform for sending digital invoices programmatically. Built with modern web technologies as a Turborepo monorepo.
 
-## Using this example
+## 🚀 Overview
 
-Run the following command:
+InvoiceVista helps developers integrate invoicing capabilities into their applications with simple, powerful APIs. The platform offers:
 
-```sh
-npx create-turbo@latest
-```
+- **Simple APIs**: Clean REST and GraphQL APIs with comprehensive SDKs
+- **Multi-channel Delivery**: Send invoices via email, SMS, or shareable links
+- **Global Support**: 135+ currencies with automatic tax calculations
+- **Payment Integration**: Built-in support for Stripe, PayPal, and other processors
+- **Enterprise Security**: SOC 2 Type II certified with end-to-end encryption
 
-## What's inside?
+## 🏗️ What's inside?
 
-This Turborepo includes the following packages/apps:
+This monorepo includes the following packages and apps:
 
-### Apps and Packages
+### Apps
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- **`web`**: Main marketing/landing page built with Next.js, Tailwind CSS, and shadcn/ui patterns
+  - Modern, responsive design with dark/light mode support
+  - Developer-focused content with code examples
+  - Runs on port 3000
+- **`docs`**: Documentation site built with Next.js
+  - Comprehensive API documentation and guides
+  - Runs on port 3001
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Packages
 
-### Utilities
+- **`@repo/ui`**: Shared React component library used by all apps
+- **`@repo/eslint-config`**: Shared ESLint configurations for consistent code style
+- **`@repo/typescript-config`**: Shared TypeScript configurations with strict type checking
 
-This Turborepo has some additional tools already setup for you:
+### Tech Stack
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- **Framework**: [Next.js](https://nextjs.org/) 15.4 with React 19
+- **Language**: [TypeScript](https://www.typescriptlang.org/) with strict mode
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) with custom design system
+- **Package Manager**: [pnpm](https://pnpm.io/) for efficient dependency management
+- **Build System**: [Turborepo](https://turborepo.com/) for fast, cached builds
+- **Deployment**: Optimized for [Vercel](https://vercel.com/) deployment
 
-### Build
+## 🛠️ Development
 
-To build all apps and packages, run the following command:
+### Prerequisites
 
-```
+- Node.js >= 18
+- pnpm 9.0.0
+
+### Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/invoicevista/invoicevista.git
 cd invoicevista
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build
+# Install dependencies
+pnpm install
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build
-yarn dlx turbo build
-pnpm exec turbo build
+# Start development servers for all apps
+pnpm dev
+
+# Or start a specific app
+pnpm dev --filter=web
+pnpm dev --filter=docs
 ```
 
-You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+### Available Scripts
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build --filter=docs
+```bash
+# Build all apps and packages
+pnpm build
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build --filter=docs
-yarn exec turbo build --filter=docs
-pnpm exec turbo build --filter=docs
-```
+# Run linting across all packages
+pnpm lint
 
-### Develop
+# Type check all packages
+pnpm check-types
 
-To develop all apps and packages, run the following command:
-
-```
-cd invoicevista
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev
-yarn exec turbo dev
-pnpm exec turbo dev
+# Format code with Prettier
+pnpm format
 ```
 
-You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+### Development URLs
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev --filter=web
+- Web App: http://localhost:3000
+- Documentation: http://localhost:3001
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev --filter=web
-yarn exec turbo dev --filter=web
-pnpm exec turbo dev --filter=web
-```
+## 📦 Building
 
-### Remote Caching
+To build all apps and packages:
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd invoicevista
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo login
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo login
-yarn exec turbo login
-pnpm exec turbo login
+```bash
+pnpm build
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+To build a specific app:
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo link
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo link
-yarn exec turbo link
-pnpm exec turbo link
+```bash
+pnpm build --filter=web
+pnpm build --filter=docs
 ```
 
-## Useful Links
+## 🚀 Deployment
 
-Learn more about the power of Turborepo:
+The monorepo is configured for automatic deployment on Vercel. Each push to the main branch triggers a new deployment.
 
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+### Environment Variables
+
+The build script for the web app includes `NODE_ENV=production` to ensure consistent production builds.
+
+## 🏛️ Architecture
+
+### Monorepo Structure
+
+```
+invoicevista/
+├── apps/
+│   ├── web/          # Main marketing site
+│   └── docs/         # Documentation site
+├── packages/
+│   ├── ui/           # Shared components
+│   ├── eslint-config/# ESLint configurations
+│   └── typescript-config/# TypeScript configurations
+├── turbo.json        # Turborepo configuration
+├── pnpm-workspace.yaml
+└── package.json
+```
+
+### Design System
+
+The web app implements a comprehensive design system with:
+- CSS custom properties for theming
+- Dark/light mode support via `next-themes`
+- Consistent spacing and typography scales
+- Responsive design patterns
+
+## 🤝 Contributing
+
+This is a private repository for the InvoiceVista platform. For questions or support, please contact the development team.
+
+## 📄 License
+
+Proprietary - All rights reserved
+
+---
+
+Built with ❤️ using [Turborepo](https://turborepo.com/)
