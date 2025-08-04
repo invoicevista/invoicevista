@@ -168,7 +168,7 @@ await client.invoices.send(invoice.id);`}
                     Developer Experience First
                   </h2>
                   <p className="mb-6 text-muted-foreground">
-                    We've obsessed over every detail of the developer experience so you can focus on building your product.
+                    We&apos;ve obsessed over every detail of the developer experience so you can focus on building your product.
                   </p>
                   <ul className="space-y-4">
                     <li className="flex items-start">
