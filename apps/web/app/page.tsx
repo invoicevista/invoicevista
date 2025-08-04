@@ -7,30 +7,11 @@ type Props = Omit<ImageProps, "src"> & {
   srcDark: string;
 };
 
-const ThemeImage = (props: Props) => {
-  const { srcLight, srcDark, ...rest } = props;
-
-  return (
-    <>
-      <Image {...rest} src={srcLight} className="imgLight" />
-      <Image {...rest} src={srcDark} className="imgDark" />
-    </>
-  );
-};
-
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <ThemeImage
-          className={styles.logo}
-          srcLight="turborepo-dark.svg"
-          srcDark="turborepo-light.svg"
-          alt="Turborepo logo"
-          width={180}
-          height={38}
-          priority
-        />
+        <h1>InvoiceVista</h1>
         <ol>
           <li>
             Get started by editing <code>apps/web/app/page.tsx</code>
@@ -94,7 +75,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to turborepo.com →
+          Go to turborepo.com → 
         </a>
       </footer>
     </div>
