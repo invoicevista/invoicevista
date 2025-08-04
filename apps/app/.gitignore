@@ -1,0 +1,7 @@
+
+# Environment files
+.env.local
+.env.production
+
+# clerk configuration (can include secrets)
+/.clerk/

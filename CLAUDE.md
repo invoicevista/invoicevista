@@ -47,7 +47,9 @@ pnpm lint && pnpm check-types
 ### Monorepo Structure
 - **apps/web**: Main Next.js marketing/landing page with Tailwind CSS, shadcn/ui patterns, and dark mode
 - **apps/docs**: Documentation site (Next.js)
-- **packages/ui**: Shared React components library used by both apps
+- **apps/api**: REST API with OpenAPI/Swagger documentation, rate limiting, and Test/Live modes
+- **apps/app**: Dashboard SPA with Clerk authentication and Test/Live mode toggle
+- **packages/ui**: Shared React components library used by all apps
 - **packages/eslint-config**: Shared ESLint configurations
 - **packages/typescript-config**: Shared TypeScript configurations
 
@@ -82,7 +84,13 @@ pnpm lint && pnpm check-types
 1. **Build Errors**: If you see "Html should not be imported" error, clean the `.next` directory
 2. **Module Errors**: Ensure config files use `.cjs` extension due to ES modules
 3. **Workspace Dependencies**: Use `workspace:*` for internal packages
-4. **Port Conflicts**: Web app uses port 3000, docs use 3001
+4. **Port Conflicts**: 
+   - Web app: port 3000
+   - Docs: port 3001
+   - API: port 3002
+   - Dashboard app: port 3003
+5. **Clerk Setup**: Dashboard app requires `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` env vars
+6. **API Authentication**: Test with `X-API-Key: test_key_1234567890` header
 
 ## Deployment
 

@@ -25,6 +25,16 @@ This monorepo includes the following packages and apps:
 - **`docs`**: Documentation site built with Next.js
   - Comprehensive API documentation and guides
   - Runs on port 3001
+- **`api`**: REST API service with OpenAPI support
+  - Auto-generated OpenAPI documentation with Swagger UI
+  - Test/Live mode support
+  - Rate limiting and API key authentication
+  - Runs on port 3002
+- **`app`**: Dashboard application for users
+  - Clerk authentication integration
+  - Test/Live mode toggle in navbar
+  - Invoice and customer management
+  - Runs on port 3003
 
 ### Packages
 
@@ -47,6 +57,7 @@ This monorepo includes the following packages and apps:
 
 - Node.js >= 18
 - pnpm 9.0.0
+- [Clerk Account](https://clerk.com) (for dashboard app authentication)
 
 ### Getting Started
 
@@ -57,6 +68,10 @@ cd invoicevista
 
 # Install dependencies
 pnpm install
+
+# Set up environment variables (see docs/ENVIRONMENT.md)
+cp apps/app/.env.local.example apps/app/.env.local
+cp apps/api/.env.local.example apps/api/.env.local
 
 # Start development servers for all apps
 pnpm dev
@@ -86,6 +101,8 @@ pnpm format
 
 - Web App: http://localhost:3000
 - Documentation: http://localhost:3001
+- API Service: http://localhost:3002
+- Dashboard App: http://localhost:3003
 
 ## 📦 Building
 
@@ -108,7 +125,9 @@ The monorepo is configured for automatic deployment on Vercel. Each push to the 
 
 ### Environment Variables
 
-The build script for the web app includes `NODE_ENV=production` to ensure consistent production builds.
+See `docs/ENVIRONMENT.md` for detailed environment configuration guide.
+
+**Important**: The dashboard app (`apps/app`) requires Clerk authentication keys to build successfully. Without proper Clerk configuration, the build will fail.
 
 ## 🏛️ Architecture
 
