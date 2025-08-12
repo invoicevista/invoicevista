@@ -71,3 +71,8 @@ Many EN 16931-compliant files will fail PEPPOL validation until they meet BIS ru
    - Delivers the converted invoice
    - Attaches the original PEPPOL file
    - This creates a bridge for PA traffic between PEPPOL and domestic systems
+### Links from the Europan Commision Website:
+eInvoicing in Spain https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Spain
+eInvoicing in Germany https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Germany
+eInvoicing in Italy https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Italy
+
