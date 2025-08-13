@@ -76,3 +76,17 @@ eInvoicing in Spain https://ec.europa.eu/digital-building-blocks/sites/display/D
 eInvoicing in Germany https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Germany
 eInvoicing in Italy https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing+in+Italy
 
+### Helpful Links
+## EU
+https://docs.peppol.eu/poacc/billing/3.0/
+https://docs.peppol.eu/poacc/billing/3.0/bis/
+German Version of EN 16931 free after registration
+https://www.din.de/de/mitwirken/normenausschuesse/nia/veroeffentlichungen/wdc-beuth:din21:327729047
+## Germany
+https://xeinkauf.de/dokumente/
+https://www.ferd-net.de/en/downloads/publications
+## Spain
+https://www.agenciatributaria.es/AEAT.desarrolladores/Desarrolladores/_menu_/Documentacion/Sistemas_Informaticos_de_Facturacion_y_Sistemas_VERI_FACTU/Sistemas_Informaticos_de_Facturacion_y_Sistemas_VERI_FACTU.html
+https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx
+## Italy
+https://www.fatturapa.gov.it/en/norme-e-regole/documentazione-fattura-elettronica/formato-fatturapa/
