@@ -7,11 +7,11 @@
 import { BaseFactory } from './IFactory';
 import { Invoice } from '../aggregates/Invoice';
 import { ValidationService } from '../services/ValidationService';
-import { InvoiceNumber } from '@/app/features/core/domain/value-objects/InvoiceNumber';
-import { PartySnapshot } from '@/app/features/core/domain/value-objects/PartySnapshot';
+import { InvoiceNumber } from '@/app/features/invoice-management/domain/value-objects/InvoiceNumber';
+import { PartySnapshot } from '@/app/features/party-management/domain/value-objects/PartySnapshot';
 import { Currency } from '@/app/features/core/domain/value-objects/Currency';
 import { ExchangeRate } from '@/app/features/core/domain/value-objects/ExchangeRate';
-import { InvoiceTotals } from '@/app/features/core/domain/value-objects/InvoiceTotals';
+import { InvoiceTotals } from '@/app/features/invoice-management/domain/value-objects/InvoiceTotals';
 import { Money } from '@/app/features/core/domain/value-objects/Money';
 import { 
   InvoiceType, 

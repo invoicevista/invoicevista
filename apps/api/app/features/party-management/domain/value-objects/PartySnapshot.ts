@@ -1,7 +1,7 @@
-import { TaxNumber } from './TaxNumber';
-import { Address } from './Address';
-import { ElectronicAddress } from './ElectronicAddress';
-import { NetworkIdentifier } from './NetworkIdentifier';
+import { TaxNumber } from '../../../core/domain/value-objects/TaxNumber';
+import { Address } from '../../../core/domain/value-objects/Address';
+import { ElectronicAddress } from '../../../core/domain/value-objects/ElectronicAddress';
+import { NetworkIdentifier } from '../../../core/domain/value-objects/NetworkIdentifier';
 
 /**
  * PartySnapshot Value Object

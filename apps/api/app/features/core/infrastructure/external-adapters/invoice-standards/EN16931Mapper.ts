@@ -1,5 +1,5 @@
 import { StandardMapper } from '../../../domain/services/StandardMapper';
-import { InvoiceType } from '../../../domain/types';
+import { InvoiceType } from '../../../../invoice-management/domain/value-objects';
 
 /**
  * EN16931Mapper implements the StandardMapper interface to convert abstract domain types to EN16931/EU specific codes and formats.

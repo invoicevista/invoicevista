@@ -1,4 +1,4 @@
-import { TaxExemptionReasonCode } from '../types';
+import { TaxExemptionReasonCode } from '../../../invoice-management/domain/value-objects';
 
 /**
  * TaxExemptionReason Value Object

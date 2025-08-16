@@ -1,5 +1,5 @@
 import { StandardMapper } from '../../../domain/services/StandardMapper';
-import { InvoiceType } from '../../../domain/types';
+import { InvoiceType } from '../../../../invoice-management/domain/value-objects';
 
 /**
  * USMapper implements the StandardMapper interface to convert abstract domain types to US and North American invoice standards and formats.

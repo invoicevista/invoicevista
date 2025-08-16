@@ -13,7 +13,7 @@ import { Address } from '@/app/features/core/domain/value-objects/Address';
 import { ContactPerson } from '../entities/ContactPerson';
 import { BankAccount } from '../entities/BankAccount';
 import { Currency } from '@/app/features/core/domain/value-objects/Currency';
-import { PartySnapshot } from '@/app/features/core/domain/value-objects/PartySnapshot';
+import { PartySnapshot } from '@/app/features/party-management/domain/value-objects/PartySnapshot';
 import { ValidationResult } from '@/app/features/core/domain/value-objects/ValidationResult';
 import { DomainEvent } from '../events/DomainEvent';
 

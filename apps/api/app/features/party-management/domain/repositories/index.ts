@@ -3,7 +3,6 @@
  * Provides common pagination, sorting, and filtering interfaces used across all repository implementations.
  * This module serves as the main entry point for importing repository contracts and shared query utilities.
  */
-export type { InvoiceRepository, InvoiceSearchCriteria } from './InvoiceRepository';
 export type { PartyRepository, PartySearchCriteria } from './PartyRepository';
 
 export interface PaginationOptions {

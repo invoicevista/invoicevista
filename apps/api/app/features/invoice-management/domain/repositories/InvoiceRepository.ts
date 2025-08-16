@@ -4,7 +4,7 @@
  * This interface abstracts data access patterns and enables dependency inversion for different storage implementations.
  */
 import type { Invoice } from '../aggregates/Invoice';
-import type { InvoiceNumber } from '@/app/features/core/domain/value-objects/InvoiceNumber';
+import type { InvoiceNumber } from '@/app/features/invoice-management/domain/value-objects/InvoiceNumber';
 import type { DateRange, PaginatedResult, PaginationOptions, SortOptions } from '.';
 
 export interface InvoiceSearchCriteria {

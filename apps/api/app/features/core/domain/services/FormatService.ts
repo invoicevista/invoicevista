@@ -1,5 +1,5 @@
 import { Invoice } from '../aggregates/Invoice';
-import { OutputFormat } from '../types';
+import { OutputFormat } from '../../../invoice-management/domain/value-objects';
 
 /**
  * FormatService Interface

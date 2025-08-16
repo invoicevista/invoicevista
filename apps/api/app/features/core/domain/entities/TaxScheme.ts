@@ -4,7 +4,7 @@
  * Used to calculate taxes, validate exemptions, and ensure compliance with local tax regulations.
  */
 
-import { TaxSchemeId, CountryCode } from '../types';
+import { TaxSchemeId, CountryCode } from '../../../invoice-management/domain/value-objects';
 import { Percentage } from '@/app/features/core/domain/value-objects/Percentage';
 import { TaxRate } from './TaxRate';
 import { TaxExemptionReason } from '@/app/features/core/domain/value-objects/TaxExemptionReason';

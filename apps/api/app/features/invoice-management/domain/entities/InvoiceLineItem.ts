@@ -4,7 +4,7 @@
  * Supports complex invoicing scenarios with allowances, charges, periods, and multiple tax treatments.
  */
 
-import { LineItemId, ProductCode, Period } from '../../../invoice-management/domain/value-objects';
+import { LineItemId, ProductCode, Period } from '../types';
 import { Quantity } from '@/app/features/core/domain/value-objects/Quantity';
 import { UnitCode } from '@/app/features/core/domain/value-objects/UnitCode';
 import { Money } from '@/app/features/core/domain/value-objects/Money';

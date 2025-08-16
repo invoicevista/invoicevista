@@ -1,4 +1,4 @@
-import { AddressScheme } from '../types';
+import { AddressScheme } from '../../../invoice-management/domain/value-objects';
 
 /**
  * ElectronicAddress Value Object

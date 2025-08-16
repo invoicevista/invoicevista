@@ -1,4 +1,4 @@
-import { Money } from './Money';
+import { Money } from '../../../core/domain/value-objects/Money';
 
 /**
  * InvoiceTotals Value Object

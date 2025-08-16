@@ -1,4 +1,4 @@
-import { ValidationSeverity } from '../types';
+import { ValidationSeverity } from '../../../invoice-management/domain/value-objects';
 
 /**
  * ValidationResult Value Object

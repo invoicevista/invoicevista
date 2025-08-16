@@ -4,7 +4,7 @@
  * Each event contains relevant data needed for downstream processing and maintains complete traceability of invoice operations.
  */
 
-import { DomainEvent } from './DomainEvent';
+import { DomainEvent } from '@/app/features/core/domain/events/DomainEvent';
 import { Money } from '@/app/features/core/domain/value-objects/Money';
 import { InvoiceLineItem } from '../entities/InvoiceLineItem';
 

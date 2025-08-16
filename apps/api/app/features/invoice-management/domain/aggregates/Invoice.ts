@@ -5,12 +5,12 @@
  */
 
 import { InvoiceId, InvoiceType, InvoiceProfile, InvoiceMetadata, DocumentStatus, TransmissionStatus, PaymentStatus, OutputFormat, UserId, Timestamp, ProjectReference, Period } from '../types';
-import { InvoiceNumber } from '@/app/features/core/domain/value-objects/InvoiceNumber';
-import { PartySnapshot } from '@/app/features/core/domain/value-objects/PartySnapshot';
+import { InvoiceNumber } from '@/app/features/invoice-management/domain/value-objects/InvoiceNumber';
+import { PartySnapshot } from '@/app/features/party-management/domain/value-objects/PartySnapshot';
 import { Currency } from '@/app/features/core/domain/value-objects/Currency';
 import { ExchangeRate } from '@/app/features/core/domain/value-objects/ExchangeRate';
 import { InvoiceLineItem } from '../entities/InvoiceLineItem';
-import { InvoiceTotals } from '@/app/features/core/domain/value-objects/InvoiceTotals';
+import { InvoiceTotals } from '@/app/features/invoice-management/domain/value-objects/InvoiceTotals';
 import { TaxBreakdown } from '@/app/features/core/domain/value-objects/TaxBreakdown';
 import { DocumentReference } from '@/app/features/core/domain/value-objects/DocumentReference';
 import { ValidationResult, ValidationProfile, ValidationIssue } from '@/app/features/core/domain/value-objects/ValidationResult';
